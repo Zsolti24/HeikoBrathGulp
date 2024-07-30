@@ -1,11 +1,147 @@
+$brandPrimary: #A62120;
+$brandSecondary: #2B2B2B;
+$grayColor: #404040;
+$middleWidth: 1200px;
+$middleWidthSmaller: 1500px;
+
 *{
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';    
 }
 body{
-    background-color: red($color: #000000);
+    position: relative;
+    background-color: #000000F0;
+}
+.navBarContainer{
+    width: 100%;
+    max-width: 100vw;
+    position: fixed;
+    z-index: 10;
+}
+.navTop{
+    background-color: #B50014;
+    width: 100%;
+    height: 93px;
+    display: flex;
+    justify-content: center;
+}
+.navTopContainer{
+    display: flex;
+    width: $middleWidth;
+    justify-content: space-between;
+}
+.imgLogo{
+    height: 172.2px;
+}
+.navOptions{
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    text-align: left;
+    gap: 25px;
+    color: #FFFFFF;
+    height: 93px;
+    align-items: center;
+}
+.navOption{
+    cursor: pointer;
+}
+.downloadOption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
-.test{
-    color: red;
-    font-size: 30px;
+
+.navBottom{
+    background-color: $brandSecondary;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
 }
+.navBottomContainer{
+    display: flex;
+    justify-content: right;
+    width: $middleWidth;
+    text-align: right;
+    color: #FFFFFF;
+    align-items: center;
+}
+.clockVector{
+    margin-right: 5px;
+}
+.OpentimeSpan{
+    font-weight: bold;
+    margin-right: 10px;
+}
+// .hamburgerMenuIcon{
+//     opacity: 0;
+// }
+// .mobiltext{
+//     opacity: 0;
+// }
+
+
+
+// @media only screen and (max-width: 1160px) {
+//     .navTop{
+//        height: 75px;
+//     }       
+//     .navOptions{
+//         height: 75px;
+//     }
+    
+//     .navBottom{
+//         height: 35px;
+//      }  
+//      .imgLogo{
+//         height: 96px;
+//      }
+//      .navOption{
+//         opacity: 0;
+//         width: 0px;
+//      }
+//      .downloadOption{
+//         opacity: 1;
+//         width: 100px;
+//         position: absolute;
+//      }
+//      .hamburgerMenuIcon{
+//         opacity: 1;
+//      }
+//      .imageSliderSection{
+//         padding-top: 110px;
+//      }
+//      .reservationTextSide{
+//         width: 100%;
+//         margin-bottom: 60px;
+//         margin-top: 60px;
+//         justify-content: center;
+//      }
+//      .reservationImageSlide{
+//         width: 100%;
+//      }
+//      .reservationTextContainer{
+//         text-align: center;
+//         width: 500px;
+//         margin-right: 0px;
+//         align-items: center;
+//      }
+//      .reservationTexth1{
+//         text-align: center;
+//     }
+//     .enumeration{
+//         text-align: center;
+//     }
+//     li{
+//         text-align: center;
+//     }
+//     .reservationButton{
+//         margin-top: 25px;
+//         margin-bottom: 15px;
+//     }
+//   }

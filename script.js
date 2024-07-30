@@ -59,3 +59,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateCarousel();
 });
+
+function HamburgerClick(){
+    const sidebar = document.querySelector('.sideBar');
+    if(sidebar.classList.contains('active')){
+        sidebar.classList.remove('active');
+    }
+    else{
+        sidebar.classList.add('active');
+    }
+}

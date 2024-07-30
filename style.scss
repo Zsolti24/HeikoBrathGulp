@@ -10,6 +10,7 @@ $middleWidthSmaller: 1500px;
     font-family: 'Roboto';    
 }
 body{
+    transition: background-color 500ms linear;
     position: relative;
     background-color: #000000F0;
     color: #FFFFFF;
@@ -60,6 +61,15 @@ body{
 .imgLogo{
     height: 172.2px;
 }
+.spin{
+    animation: spinning 2s;
+}
+
+@keyframes spinning {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
 .navOptions{
     display: flex;
     font-size: 16px;

@@ -69,3 +69,36 @@ function HamburgerClick(){
         sidebar.classList.add('active');
     }
 }
+
+var time = false;
+var currentMode = "dark";
+function modeChange(){
+    if (time==false){
+        time=true;
+        const logo = document.querySelector('.imgLogo');
+        logo.classList.add('spin');
+
+
+        if(currentMode=="dark"){
+            document.body.style.backgroundColor = "#c5c5c5";
+            currentMode="light";
+        }
+        else{
+            document.body.style.backgroundColor = "#000000F0";
+            currentMode="dark";
+        }
+
+
+
+
+
+
+
+
+        setTimeout(function () {
+            logo.classList.remove('spin');
+            time=false;
+        }, 2500);
+    }
+    
+}

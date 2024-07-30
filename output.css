@@ -5,6 +5,7 @@
 }
 
 body {
+  transition: background-color 500ms linear;
   position: relative;
   background-color: rgba(0, 0, 0, 0.9411764706);
   color: #FFFFFF;
@@ -64,6 +65,18 @@ body {
   height: 172.2px;
 }
 
+.spin {
+  animation: spinning 2s;
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .navOptions {
   display: flex;
   font-size: 16px;

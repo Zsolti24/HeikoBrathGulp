@@ -88,17 +88,22 @@ function modeChange(){
             currentMode="dark";
         }
 
-
-
-
-
-
-
-
         setTimeout(function () {
             logo.classList.remove('spin');
             time=false;
         }, 2500);
     }
     
+}
+
+
+window.addEventListener('scroll', () => {
+    const scrollDepth = window.scrollY;
+    if(scrollDepth > 4000){
+        console.log("sok");
+    }
+  });
+  
+function closePopUp(){
+    console.log("asd");
 }

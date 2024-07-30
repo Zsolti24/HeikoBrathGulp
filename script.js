@@ -107,33 +107,30 @@ function closePopUp(){
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    let isScrolling;
-    let startTime;
 
-    const scrollContainer = document.body;
+let accumulatedScrollTime = 0;
+let lastScrollEventTime = null;
+let popped = false;
+const SCROLL_THRESHOLD = 5000; 
 
-    if (scrollContainer) {
-      scrollContainer.addEventListener('scroll', function () {
-        // Initialize start time on the first scroll event
-        if (!startTime) {
-          startTime = performance.now();
-        }
+function handleScroll() {
+  const currentTime = Date.now();
 
-        // Clear the previous timeout
-        clearTimeout(isScrolling);
+  if (lastScrollEventTime !== null) {
+    accumulatedScrollTime += (currentTime - lastScrollEventTime);
+  }
 
-        // Set a new timeout to check if scrolling has stopped
-        isScrolling = setTimeout(function () {
-          const elapsedTime = performance.now() - startTime;
-          if (elapsedTime >= 4000) {
-            alert('User has been scrolling for 4000 ms!');
-          }
-          // Reset start time after checking the condition
-          startTime = null;
-        }, 100); // Adjust the debounce timeout as necessary
-      });
-    } else {
-      console.error('Scroll container not found');
+  lastScrollEventTime = currentTime;
+
+  if (accumulatedScrollTime >= SCROLL_THRESHOLD) {
+    if(popped == false){
+        popped = true;
+        const popUpElement = document.querySelector('.popUp');
+        popUpElement.style.zIndex = "25";
+        popUpElement.style.opacity = "1";
+        document.body.style.overflow="hidden";
     }
-  });
+  }
+}
+
+window.addEventListener('scroll', handleScroll);

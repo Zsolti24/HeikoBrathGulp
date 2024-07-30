@@ -14,18 +14,17 @@ body{
     position: relative;
     background-color: #000000F0;
     color: #FFFFFF;
-    overflow: hidden;
 }
 .popUp{
     position: fixed ;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 50;
+    z-index: -50;
     width: 100vw;
     height: 100vh;
     background: #36313195;
-    opacity: 1;
+    opacity: 0;
     overflow: hidden;
 }
 .popUpCanvas{

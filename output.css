@@ -9,7 +9,6 @@ body {
   position: relative;
   background-color: rgba(0, 0, 0, 0.9411764706);
   color: #FFFFFF;
-  overflow: hidden;
 }
 
 .popUp {
@@ -17,11 +16,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 50;
+  z-index: -50;
   width: 100vw;
   height: 100vh;
   background: rgba(54, 49, 49, 0.5843137255);
-  opacity: 1;
+  opacity: 0;
   overflow: hidden;
 }
 

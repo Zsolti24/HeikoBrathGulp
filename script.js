@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.swiper', {
+
+    var rellax = new Rellax('.bcgImg');
+const swiper = new Swiper('.swiper', {
 direction: 'horizontal',
 loop: true,
 pagination: {

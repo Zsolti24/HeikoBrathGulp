@@ -27,7 +27,6 @@ function swapImage(thumbnail) {
 
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.carousel');
     const cards = Array.from(carousel.querySelectorAll('.card'));
@@ -40,9 +39,24 @@ document.addEventListener('DOMContentLoaded', () => {
             carousel.appendChild(card);
         });
         cards.forEach((card, index) => {
-            card.classList.remove('large'); 
-            if (index === 1) { 
+            card.classList.remove('large');
+            const images = card.querySelectorAll('img');
+            const textLarge = card.querySelector('.textLarge');
+            if (index === 1) {
                 card.classList.add('large');
+                images.forEach(image => {
+                    image.style.display = 'block';
+                });
+                if (textLarge) {
+                    textLarge.style.display = 'block';
+                }
+            } else {
+                images.forEach(image => {
+                    image.style.display = 'none';
+                });
+                if (textLarge) {
+                    textLarge.style.display = 'none';
+                }
             }
         });
     }
@@ -59,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateCarousel();
 });
+
 
 function HamburgerClick(){
     const sidebar = document.querySelector('.sideBar');

@@ -711,15 +711,15 @@ cursor: pointer;
     top: 5px;
 }
 .hamburgerMenuIcon{
-    position: absolute;
+    position: fixed;
     top: -100px;
     opacity: 0;
-    z-index: 20;
+    z-index: 0;
 }
 .hamburgerButton{
     cursor: default;
     opacity: 0;
-    z-index: 20;
+    z-index: 0;
 }
 .mobiltext{
     position: absolute;
@@ -782,9 +782,9 @@ cursor: pointer;
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
-    width: 342px;
+    width: 300px;
 
-}
+}í
 .sender{
     color: #FFFFFF;
     font-size: 12px;
@@ -840,13 +840,37 @@ cursor: pointer;
     
 .spicesImageSide{
     width: 100%;
-}.carousel{
-    width: 300px;
-}.carousel-container{
-    width: 100px;
-    overflow: scroll;
+}
+.carousel{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    display: none;
+}
+.card.large{
+    display: flex;
+}
+.arrow {
+    cursor: pointer;
+    position: absolute;
 }
 
+#prev{
+    left: 100px;
+    bottom: -90px;
+}
+#next{
+    bottom: -90px;
+    right: 100px;
+}
+.ArrowPic{
+    height: 64px;
+    height: 64px;
+}
+.buttonContainer{
+    margin-top: 80px;
+}
 .spicesImage{
     width: 100%;
     height: 100%;
@@ -918,7 +942,7 @@ cursor: pointer;
         cursor: pointer;
      }
      .hamburgerMenuIcon{
-        position: absolute;
+        position: fixed;
         right: 35px;
         top: 23px;
         opacity: 1;

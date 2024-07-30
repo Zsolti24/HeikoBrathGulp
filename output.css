@@ -7,6 +7,7 @@
 body {
   position: relative;
   background-color: rgba(0, 0, 0, 0.9411764706);
+  color: #FFFFFF;
 }
 
 .navBarContainer {
@@ -41,7 +42,6 @@ body {
   line-height: 18.75px;
   text-align: left;
   gap: 25px;
-  color: #FFFFFF;
   height: 93px;
   align-items: center;
 }
@@ -70,17 +70,79 @@ body {
   justify-content: right;
   width: 1200px;
   text-align: right;
-  color: #FFFFFF;
   align-items: center;
-}
-
-.clockVector {
-  margin-right: 5px;
 }
 
 .OpentimeSpan {
   font-weight: bold;
   margin-right: 10px;
+  margin-left: 5px;
+}
+
+.imageSliderSection {
+  width: 100%;
+  padding-top: 123px;
+  position: relative;
+  z-index: 8;
+  background-color: gray;
+  height: 679px;
+}
+
+.imageSliderTextContainer {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 629px;
+  height: 348px;
+  background-color: rgba(0, 0, 0, 0.3019607843);
+}
+
+.imageSliderTextLocation {
+  margin-left: 250px;
+  height: 348px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  gap: 20px;
+}
+
+.imageSliderTextH1 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 44.53px;
+}
+
+.imageSliderText {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+}
+
+.swiper {
+  width: 100%;
+  height: 679px;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 679px;
+}
+
+.swiper-slide {
+  color: #FFFFFF;
+  height: 679px;
+  width: 100%;
+}
+
+.swiperImage {
+  object-fit: cover;
+  height: 679px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=output.css.map */

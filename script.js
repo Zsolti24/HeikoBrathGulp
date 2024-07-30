@@ -97,13 +97,43 @@ function modeChange(){
 }
 
 
-window.addEventListener('scroll', () => {
-    const scrollDepth = window.scrollY;
-    if(scrollDepth > 4000){
-        console.log("sok");
+
+function closePopUp(){
+    const popUpElement = document.querySelector('.popUp');
+    popUpElement.style.zIndex = "-1";
+    popUpElement.style.opacity = "0";
+    document.body.style.overflow="auto";
+}
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    let isScrolling;
+    let startTime;
+
+    const scrollContainer = document.body;
+
+    if (scrollContainer) {
+      scrollContainer.addEventListener('scroll', function () {
+        // Initialize start time on the first scroll event
+        if (!startTime) {
+          startTime = performance.now();
+        }
+
+        // Clear the previous timeout
+        clearTimeout(isScrolling);
+
+        // Set a new timeout to check if scrolling has stopped
+        isScrolling = setTimeout(function () {
+          const elapsedTime = performance.now() - startTime;
+          if (elapsedTime >= 4000) {
+            alert('User has been scrolling for 4000 ms!');
+          }
+          // Reset start time after checking the condition
+          startTime = null;
+        }, 100); // Adjust the debounce timeout as necessary
+      });
+    } else {
+      console.error('Scroll container not found');
     }
   });
-  
-function closePopUp(){
-    console.log("asd");
-}

@@ -80,11 +80,85 @@ function modeChange(){
 
 
         if(currentMode=="dark"){
-            document.body.style.backgroundColor = "#c5c5c5";
+            document.body.style.backgroundColor = "#c9c9c9";
+            document.body.style.color = "#000000F0";
+            document.querySelector('.navBottom').style.backgroundColor = "#c1c1c1";
+            document.querySelector('.Description').style.color = "#000000F0";
+            document.querySelector('.reservationTexth1').style.color = "#000000F0";
+            document.querySelector('.enumeration').style.color = "#000000F0";
+            document.querySelector('.productTitle').style.color = "#000000F0";
+            document.querySelector('.productSecondTitle').style.color = "#000000F0";
+            document.querySelector('.productDescription').style.color = "#000000F0";
+            document.querySelector('.ProductDescriptionButton').style.color = "#000000F0";
+            document.querySelector('.spicesTexth1').style.color = "#000000F0";
+            document.querySelector('.spicesh2').style.color = "#000000F0";
+            document.querySelector('.spicesDescription').style.color = "#000000F0";
+            document.querySelector('.deliveryTitle').style.color = "#000000F0";
+            document.querySelector('.otherSideText').style.color = "#000000F0";
+            const redButtons = document.querySelectorAll('.redButton');
+            redButtons.forEach(rb => {
+                rb.style.color = '#000000F0'; 
+              });document.querySelector('.medalText').style.color = "#000000F0";
+            const medalComponentTexts = document.querySelectorAll('.medalComponentText');
+            medalComponentTexts.forEach(mDT => {
+                mDT.style.color = '#000000F0'; 
+              });
+            document.querySelector('.Recommendation').style.color = "#000000F0";
+            document.querySelector('.RecommendationTitle').style.color = "#000000F0";
+            const messages = document.querySelectorAll('.message');
+            messages.forEach(msg => {
+                msg.style.color = '#000000F0'; 
+              });
+              const senders = document.querySelectorAll('.sender');
+              senders.forEach(s => {
+                  s.style.color = '#000000F0'; 
+                });
+            document.querySelector('.card.large').style.color = "#000000F0";
+            document.querySelector('.footerBottomText').style.color = "#000000F0";
+            document.querySelector('.footerBottomTextSP').style.color = "#000000F0";
+            document.querySelector('.footerTopRightText').style.color = "#000000F0";
+            document.querySelector('.addressesTexrt').style.color = "#000000F0";
             currentMode="light";
         }
         else{
             document.body.style.backgroundColor = "#000000F0";
+            document.body.style.color = "#FFFFFF";
+            document.querySelector('.navBottom').style.backgroundColor = "#2B2B2B";
+            document.querySelector('.Description').style.color = "#FFFFFF";
+            document.querySelector('.reservationTexth1').style.color = "#FFFFFF";
+            document.querySelector('.enumeration').style.color = "#FFFFFF";
+            document.querySelector('.productTitle').style.color = "#FFFFFF";
+            document.querySelector('.productSecondTitle').style.color = "#FFFFFF";
+            document.querySelector('.productDescription').style.color = "#FFFFFF";
+            document.querySelector('.ProductDescriptionButton').style.color = "#FFFFFF";
+            document.querySelector('.spicesTexth1').style.color = "#FFFFFF";
+            document.querySelector('.spicesh2').style.color = "#FFFFFF";
+            document.querySelector('.spicesDescription').style.color = "#FFFFFF";
+            document.querySelector('.deliveryTitle').style.color = "#FFFFFF";
+            document.querySelector('.otherSideText').style.color = "#FFFFFF";
+            const redButtons = document.querySelectorAll('.redButton');
+            redButtons.forEach(rb => {
+                rb.style.color = '#FFFFFF'; 
+              });document.querySelector('.medalText').style.color = "#FFFFFF";
+            const medalComponentTexts = document.querySelectorAll('.medalComponentText');
+            medalComponentTexts.forEach(mDT => {
+                mDT.style.color = '#FFFFFF'; 
+              });
+            document.querySelector('.Recommendation').style.color = "#FFFFFF";
+            document.querySelector('.RecommendationTitle').style.color = "#FFFFFF";
+            const messages = document.querySelectorAll('.message');
+            messages.forEach(msg => {
+                msg.style.color = '#FFFFFF'; 
+              });
+              const senders = document.querySelectorAll('.sender');
+              senders.forEach(s => {
+                  s.style.color = '#FFFFFF'; 
+                });
+            document.querySelector('.card.large').style.color = "#FFFFFF";
+            document.querySelector('.footerBottomText').style.color = "#FFFFFF";
+            document.querySelector('.footerBottomTextSP').style.color = "#FFFFFF";
+            document.querySelector('.footerTopRightText').style.color = "#FFFFFF";
+            document.querySelector('.addressesTexrt').style.color = "#FFFFFF";
             currentMode="dark";
         }
 

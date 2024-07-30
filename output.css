@@ -237,4 +237,75 @@ p {
   cursor: pointer;
 }
 
+.reservationSection {
+  background-color: #A62120;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.reservationTextSide {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+}
+
+.reservationTextContainer {
+  width: 427px;
+  margin-right: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  word-spacing: 5px;
+}
+
+.reservationTexth1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: left;
+  color: #FFFFFF;
+  width: 250px;
+}
+
+.enumeration {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.reservationButton {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  width: 174px;
+  height: 47px;
+  background-color: #FFFFFF;
+  border: 1px solid #FF0000;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #252525;
+}
+
+.reservationImageSlide {
+  width: 50%;
+}
+
+.reservationImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 /*# sourceMappingURL=output.css.map */

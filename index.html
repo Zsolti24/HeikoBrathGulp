@@ -5,28 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeikoBrath</title>
     <link rel="stylesheet" href="output.css">
-    <!-- <script>
-        document.addEventListener('DOMContentLoaded', function () {
-                const swiper = new Swiper('.swiper', {
-            direction: 'horizontal',
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-            });
-        });
-    </script> -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
-
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet'>
     <script src="./script.js"></script>
 </head>
@@ -48,24 +29,25 @@
                         <img src="./images/pdfVector.png" alt="">    
                         download
                     </div>
+                    <div class="hamburgerMenuIcon">
+                        <img src="./images/pdfVector.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="navBottom">
             <div class="navBottomContainer">
+                <div class="mobiltext">
+                    <div class="mobilTextTop">Christmas opentime:</div>
+                    <div class="mobilTextBottom">Di. - Fr.: 07:00-13:00  und 15:00-18:30.    Sa.:	 07:30	-	12:30</div>
+                </div>
+
                 <img src="./images/clockVector.png" alt="" class="clockVector">
                 <div class="DisapearOnMobile"><span class="OpentimeSpan">Opentime:   </span>  Di. - Fr.: 07:00-13:00  und 15:00-18:30.    Sa.:	 07:30	-	12:30</div>
             </div>
         </div>
     </div>
     <div class="imageSliderSection">
-        <div class="imageSliderTextContainer">
-            <div class="imageSliderTextLocation">
-                <div class="imageSliderTextH1">Heiko Brath
-                    Metzgermeister</div>
-                <div class="imageSliderText">Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per ne, nam Aperol Spritz probatus pertinax.</div>
-            </div>
-        </div>
         <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide"><img src="./images/image 14.jpg" alt="" class="swiperImage"></div>
@@ -77,6 +59,13 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
+          <div class="imageSliderTextContainer">
+            <div class="imageSliderTextLocation">
+                <div class="imageSliderTextH1">Heiko Brath
+                    Metzgermeister</div>
+                <div class="imageSliderText">Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per ne, nam Aperol Spritz probatus pertinax.</div>
+            </div>
+        </div>
     </div>
     <div class="imageDescriptionSection">
         <div lass="imageDescription">
@@ -169,14 +158,18 @@
     <div class="recordsSection">
         <div class="recordContainer">
             <div class="titlePart">
-                <img src="./images/recordLogo.png" alt="">
+                <div class="thisSide">
+                    <img src="./images/recordLogo.png" alt="">
+                </div>
                 <div class="otherSide">
                     <div class="otherSideText">Metzgerei Brath ist Mitglied 
                         im Genussnetzwerk</div>
                         <div class="redButton">Gehen zu site</div>
                 </div>
             </div>
-            <img src="./images/vonal 1.png" alt="">
+            <div class="imgContainerVonal">
+                <img src="./images/vonal 1.png" alt="">
+            </div>
             <div class="Medals">
                 <div class="medalText">Auszeichnungen</div>
                 <div class="medalComponent">
@@ -208,7 +201,9 @@
                         ullum gloriatur.</div>
                 </div>
             </div>
-            <img src="./images/vonal 1.png" alt="">
+            <div class="imgContainerVonal">
+                <img src="./images/vonal 1.png" alt="">
+            </div>
             <div class="Recommendation">Empfehlungs</div>
             <div class="RecommendationTitle">Was die Leute über uns sagen</div>
             

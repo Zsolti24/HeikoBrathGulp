@@ -149,13 +149,14 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 100px;
   margin-bottom: 50px;
 }
 
 .imageDescription {
   display: flex;
-  width: 1500px;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -370,6 +371,7 @@ li {
   display: flex;
   justify-content: center;
   margin-top: 90px;
+  overflow: hidden;
 }
 
 .productImagesContainer {
@@ -507,15 +509,21 @@ li {
 
 .recordContainer {
   width: 1098px;
+  position: relative;
 }
 
 .titlePart {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 100px;
 }
 
 .otherSideText {
+  width: 400px;
+}
+
+.thisSide {
   width: 400px;
 }
 
@@ -816,6 +824,332 @@ li {
 
 #next {
   right: 299px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .spicesImageSide {
+    width: 100%;
+  }
+  .carousel {
+    width: 300px;
+  }
+  .carousel-container {
+    width: 100px;
+    overflow: scroll;
+  }
+  .spicesImage {
+    width: 100%;
+    height: 100%;
+  }
+  .spicesTextSide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+  .spicesTextContainer {
+    margin-left: 0px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    gap: 30px;
+  }
+  .spicesTexth1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .spicesh2 {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .spicesDescription {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .navTop {
+    height: 75px;
+  }
+  .navOptions {
+    height: 75px;
+  }
+  .navBottom {
+    height: 35px;
+  }
+  .imgLogo {
+    height: 96px;
+  }
+  .navOption {
+    opacity: 0;
+    width: 0px;
+  }
+  .downloadOption {
+    opacity: 1;
+    width: 100px;
+    position: absolute;
+  }
+  .hamburgerMenuIcon {
+    opacity: 1;
+  }
+  .imageSliderSection {
+    padding-top: 110px;
+  }
+  .reservationTextSide {
+    width: 100%;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    justify-content: center;
+  }
+  .reservationImageSlide {
+    width: 100%;
+  }
+  .reservationTextContainer {
+    text-align: center;
+    width: 500px;
+    margin-right: 0px;
+    align-items: center;
+  }
+  .reservationTexth1 {
+    text-align: center;
+  }
+  .enumeration {
+    text-align: center;
+  }
+  li {
+    text-align: center;
+  }
+  .reservationButton {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  .recordContainer {
+    width: 650px;
+    align-items: center;
+    justify-content: center;
+  }
+  .titlePart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .thisSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .otherSide {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .otherSideText {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .imgContainerVonal {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .Medals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 1110px) {
+  .productImages {
+    justify-content: center;
+    gap: 50px;
+  }
+  .productMiddleContainer {
+    width: 400px;
+  }
+  .imageDescriptionSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 0px;
+    margin-bottom: 50px;
+  }
+  .Description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .imageDescription {
+    justify-content: center;
+  }
+  .Descriptionh2 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .Descriptionh3 {
+    text-align: center;
+  }
+  .DescriptionText {
+    text-align: center;
+  }
+  .DescriptionButtons {
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+    margin-top: 60px;
+  }
+  .imageGalerySide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 90px;
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .footerTop {
+    height: auto;
+  }
+  .footerTopContainer {
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .footerBottom {
+    height: auto;
+  }
+  .footerBottomContainer {
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .footerBottomText {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footerBottomTextSP {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-decoration: underline;
+  }
+  .fotterTopLeft {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  .littleIconHolder {
+    position: absolute;
+    opacity: 0;
+  }
+  .footerTopRight {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footerLogoHolder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 131.2px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .footerLogoImage {
+    top: 0;
+    bottom: 0;
+    height: 131.2px;
+    width: 131.2px;
+  }
+  .imageSliderSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .imageSliderTextContainer {
+    display: flex;
+    justify-content: center;
+    position: inherit;
+    width: 100%;
+    height: 348px;
+    background-color: #000000;
+  }
+  .imageSliderTextLocation {
+    margin-left: 0px;
+    height: 348px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    gap: 20px;
+  }
+  .imageSliderTextH1 {
+    text-align: center;
+  }
+  .imageSliderText {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .mobiltext {
+    opacity: 1;
+  }
+  .clockVector {
+    opacity: 0;
+  }
+  .DisapearOnMobile {
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .recordContainer {
+    width: 380px;
+    align-items: center;
+    justify-content: center;
+  }
+  .Medals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    gap: 40px;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -37,10 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
         cards.forEach(card => {
             carousel.appendChild(card);
         });
-        // Középső kártya nagyobbítása
         cards.forEach((card, index) => {
-            card.classList.remove('large'); // Eltávolítjuk a nagyobb osztályt
-            if (index === 1) { // Középső kártya (index 1)
+            card.classList.remove('large'); 
+            if (index === 1) { 
                 card.classList.add('large');
             }
         });

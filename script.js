@@ -185,8 +185,6 @@ function modeChange(){
     
 }
 
-
-
 function closePopUp(){
     const popUpElement = document.querySelector('.popUp');
     popUpElement.style.zIndex = "-1";
